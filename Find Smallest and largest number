@@ -1,0 +1,16 @@
+largest = None
+smallest = None
+while True :
+    slar = input('Enter a Number :')
+    if slar == ('done') : break
+    try :
+        slar = float(slar)
+        if largest is None or largest < slar :
+            largest = slar
+        if smallest is None or smallest > slar :
+            smallest = slar
+    except :
+        print ('Enter a valid Number')
+        continue
+print('Largest Number is :' ,largest)
+print('smallest Number is :' ,smallest)
