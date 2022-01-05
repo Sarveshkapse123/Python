@@ -1,0 +1,14 @@
+num = 0
+sum = 0
+while True :
+  slar = input('Enter Number : ')
+  if slar == ('done') :
+      break
+  try :
+      flar = float(slar)
+  except :
+      print('Enter valid Number')
+      continue
+  num = num + 1 
+  sum = sum + flar
+print('num ,Sum ,Average' , num ,sum ,sum/num)
